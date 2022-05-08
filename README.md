@@ -2,6 +2,9 @@
 SSO center achieved by Springboot.
 
 Springboot实现的基于登陆中心的SSO单点登录系统的登陆中心部分。</br>
+client部分：[https://github.com/huiluczP/sso_client](https://github.com/huiluczP/sso_client)</br>
+项目简介：[基于登录中心的跨域SSO实现](https://blog.csdn.net/qq_41733192/article/details/124652716)
+
 SSO登陆中心功能：
 1.	登录页面显示
 2.	登录成功的判断
