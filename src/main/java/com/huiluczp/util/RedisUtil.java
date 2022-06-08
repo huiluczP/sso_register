@@ -5,10 +5,12 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
+import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
@@ -18,8 +20,8 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 @Component
 public class RedisUtil {
-    @Autowired
-    private StringRedisTemplate redisTemplate;
+    @Resource
+    private RedisTemplate<String, String> redisTemplate;
 
     private final String DEFAULT_KEY_PREFIX = "";
 
